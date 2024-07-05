@@ -89,9 +89,9 @@ export default function Home() {
 
           <div>
             <p className="text-base text-white font-normal">
-              &quot; We needed the same printed design as the one we had ordered
-              a week prior. Not only did they find the original order, but we
-              also received it in time. Excellent! &quot;
+              " We needed the same printed design as the one we had ordered a
+              week prior. Not only did they find the original order, but we also
+              received it in time. Excellent! "
             </p>
           </div>
         </div>
@@ -115,9 +115,9 @@ export default function Home() {
 
           <div>
             <p className="text-base text-white font-normal">
-              &quot; Customer service is always excellent and very quick turn
-              around. Completely delighted with the simplicity of the purchase
-              and the speed of delivery.&quot;
+              "Customer service is always excellent and very quick turn around.
+              Completely delighted with the simplicity of the purchase and the
+              speed of delivery."
             </p>
           </div>
         </div>
@@ -141,9 +141,9 @@ export default function Home() {
 
           <div>
             <p className="text-base text-white font-normal">
-              &quot; Put an order with this company and can only praise them for
-              the very high standard. Will definitely use them again and
-              recommend them to everyone! &quot;
+              "Put an order with this company and can only praise them for the
+              very high standard. Will definitely use them again and recommend
+              them to everyone! "
             </p>
           </div>
         </div>
