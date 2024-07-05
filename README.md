@@ -1,5 +1,7 @@
 # Social Proof - Frontend Mentor Challenge
 
+### Live Link - https://social-proof-section-lilac-six.vercel.app/
+
 ## Getting Started
 
 First, run the development server:
