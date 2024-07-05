@@ -1,112 +1,152 @@
 import Image from "next/image";
+import Star from "../../public/icon-star.svg";
+
+import Buyer1 from "../../public/image-colton.jpg";
+import Buyer2 from "../../public/image-irene.jpg";
+import Buyer3 from "../../public/image-anne.jpg";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="z-10 w-full max-w-5xl items-center justify-between font-mono text-sm lg:flex">
-        <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-          Get started by editing&nbsp;
-          <code className="font-mono font-bold">src/app/page.tsx</code>
-        </p>
-        <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:size-auto lg:bg-none">
-          <a
-            className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{" "}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className="dark:invert"
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
+    <main className="max-w-7xl mx-auto w-full h-screen py-12 px-10">
+      <div className="md:grid grid-cols-2  justify-between items-center gap-x-60 mb-10">
+        {/* left side  */}
+        <div className="mb-10 md:mb-0">
+          <h1 className="text-fushcia-950 text-4xl font-bold mb-4 text-center md:text-left">
+            10,000+ of our <br /> users love our <br /> products
+          </h1>
+
+          <p className="text-fuchsia-800 w-[90%] text-center md:text-left">
+            We only provide great products combined with excellent customer
+            service. See what our satisfied customers are saying about our
+            services.
+          </p>
+        </div>
+
+        {/* right side */}
+        <div className="flex flex-col gap-y-5 items-center">
+          <div className="w-[400px] px-4 py-2 bg-gray-100 rounded-md md:flex items-center gap-x-5">
+            <div className="flex items-center gap-x-2 justify-center md:justify-start">
+              <Image src={Star} alt="Star iamge" />
+              <Image src={Star} alt="Star iamge" />
+              <Image src={Star} alt="Star iamge" />
+              <Image src={Star} alt="Star iamge" />
+              <Image src={Star} alt="Star iamge" />
+            </div>
+
+            <p className="text-base font-bold text-fuchsia-950 text-center md:text-left">
+              Rated 5 Star in Reviews
+            </p>
+          </div>
+
+          <div className="w-[400px]  md:ml-5 px-4 py-2 bg-gray-100 rounded-md  md:flex items-center gap-x-5">
+            <div className="flex items-center gap-x-2 justify-center md:justify-start">
+              <Image src={Star} alt="Star iamge" />
+              <Image src={Star} alt="Star iamge" />
+              <Image src={Star} alt="Star iamge" />
+              <Image src={Star} alt="Star iamge" />
+              <Image src={Star} alt="Star iamge" />
+            </div>
+
+            <p className="text-base font-bold text-fuchsia-950 text-center md:text-left">
+              Rated 5 Star in Report Guru
+            </p>
+          </div>
+
+          <div className="w-[400px] md:ml-10 px-4 py-2 bg-gray-100 rounded-md  md:flex items-center gap-x-5">
+            <div className="flex items-center gap-x-2 justify-center md:justify-start">
+              <Image src={Star} alt="Star iamge" />
+              <Image src={Star} alt="Star iamge" />
+              <Image src={Star} alt="Star iamge" />
+              <Image src={Star} alt="Star iamge" />
+              <Image src={Star} alt="Star iamge" />
+            </div>
+
+            <p className="text-base font-bold text-fuchsia-950 text-center md:text-left">
+              Rated 5 Star in BestTech
+            </p>
+          </div>
         </div>
       </div>
 
-      <div className="relative z-[-1] flex place-items-center before:absolute before:h-[300px] before:w-full before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-full after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 sm:before:w-[480px] sm:after:w-[240px] before:lg:h-[360px]">
-        <Image
-          className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
+      {/* testimonial section */}
+      <div className="md:grid grid-cols-3 gap-x-5 ">
+        {/* first card */}
+        <div className="p-4 bg-fuchsia-950 rounded-md h-fit mb-10 md:mb-0">
+          <div className="flex items-center gap-x-5 mb-4">
+            <div>
+              <Image
+                src={Buyer1}
+                alt="Buyer's Image"
+                className="rounded-full w-[50px] h-[50px]"
+              />
+            </div>
 
-      <div className="mb-32 grid text-center lg:mb-0 lg:w-full lg:max-w-5xl lg:grid-cols-4 lg:text-left">
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Docs{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-sm opacity-50">
-            Find in-depth information about Next.js features and API.
-          </p>
-        </a>
+            <div>
+              <p className="text-white font-semibold">Colton Smith</p>
+              <p className="text-fuchsia-700 font-medium">Verified Buyer</p>
+            </div>
+          </div>
 
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Learn{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-sm opacity-50">
-            Learn about Next.js in an interactive course with&nbsp;quizzes!
-          </p>
-        </a>
+          <div>
+            <p className="text-base text-white font-normal">
+              " We needed the same printed design as the one we had ordered a
+              week prior. Not only did they find the original order, but we also
+              received it in time. Excellent! "
+            </p>
+          </div>
+        </div>
 
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Templates{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-sm opacity-50">
-            Explore starter templates for Next.js.
-          </p>
-        </a>
+        {/* second card */}
+        <div className="p-4 bg-fuchsia-950 rounded-md md:mt-5 h-fit mb-10 md:mb-0">
+          <div className="flex items-center gap-x-5 mb-4">
+            <div>
+              <Image
+                src={Buyer2}
+                alt="Buyer's Image"
+                className="rounded-full w-[50px] h-[50px]"
+              />
+            </div>
 
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Deploy{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-balance text-sm opacity-50">
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
+            <div>
+              <p className="text-white font-semibold">Colton Smith</p>
+              <p className="text-fuchsia-700 font-medium">Verified Buyer</p>
+            </div>
+          </div>
+
+          <div>
+            <p className="text-base text-white font-normal">
+              "Customer service is always excellent and very quick turn around.
+              Completely delighted with the simplicity of the purchase and the
+              speed of delivery."
+            </p>
+          </div>
+        </div>
+
+        {/* third card */}
+        <div className="p-4 bg-fuchsia-950 rounded-md md:mt-10 h-fit">
+          <div className="flex items-center gap-x-5 mb-4">
+            <div>
+              <Image
+                src={Buyer3}
+                alt="Buyer's Image"
+                className="rounded-full w-[50px] h-[50px]"
+              />
+            </div>
+
+            <div>
+              <p className="text-white font-semibold">Colton Smith</p>
+              <p className="text-fuchsia-700 font-medium">Verified Buyer</p>
+            </div>
+          </div>
+
+          <div>
+            <p className="text-base text-white font-normal">
+              "Put an order with this company and can only praise them for the
+              very high standard. Will definitely use them again and recommend
+              them to everyone! "
+            </p>
+          </div>
+        </div>
       </div>
     </main>
   );
