@@ -7,7 +7,7 @@ import Buyer3 from "../../public/image-anne.jpg";
 
 export default function Home() {
   return (
-    <main className="max-w-7xl mx-auto w-full h-screen py-12 px-10">
+    <main className="max-w-7xl mx-auto w-full h-screen py-12 px-10 flex flex-col items-center justify-center">
       <div className="md:grid grid-cols-2  justify-between items-center gap-x-60 mb-10">
         {/* left side  */}
         <div className="mb-10 md:mb-0">
